@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeu de la vie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="js/GrilleAffichage.js"></script>
+    <script defer src="js/Scenario.js"></script>
+    <script defer src="js/GrilleJeu.js"></script>
+    <script defer src="js/ConfigureGrilleJeu.js"></script>
+</head>
+<body>
+    <div id="param">
+        <div id="paramParam">
+            <label for="ligne">Nombre de lignes (5-100):
+            <input type="number" id="ligne" name="lignes" min="5" max="100" value="40"></label>
+
+            <label for="colonne">Nombre de colonnes (5-100):
+            <input type="number" id="colonne" name="colonnes" min="5" max="100" value="40"></label>
+
+            <label for="interval">Interval entre les générations (100 - 1000)ms:
+            <input type="number" id="interval" name="intervals" min="100" max="1000" value="100"></label>
+        </div>
+
+        <div id="paramBouton">
+            <img src="../image/reinitialiser.png" alt="Grille aléatoire" id="reload" title="Reload">
+            <img src="../image/aleatoire.png" alt="Grille aléatoire" id="random" title="Random">
+            <img src="../image/bouton-de-lecture-video.png" alt="Lancer le Jeu" id="start" title="Start">
+            <img src="../image/bouton-darret.png" alt="Stoper le jeu" id="stop" title="Stop">
+        </div>
+
+        <label for="jour" id="nbJours">Jours:
+        <input type="text" id="jour" name="jours"></label>
+    </div>
+
+    <div id="grille_jeu"></div>
+</body>
+</html>

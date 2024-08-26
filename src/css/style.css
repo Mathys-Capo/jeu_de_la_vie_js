@@ -1,0 +1,46 @@
+
+html{
+    background-color: beige;
+}
+
+.vivant{
+    background-color: black;
+}
+
+td{
+    background-color: whitesmoke;
+    height: auto;
+    width: auto;
+}
+
+table{
+    background-color: lightblue;
+    height: 700px;
+    width: 700px;
+    border-spacing: 1px;
+}
+
+#param{
+    border: solid;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    background-color: lightslategrey;
+}
+#paramBouton,#paramParam,#grille_jeu{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+#paramParam>label{
+    margin: auto;
+}
+
+.cache{
+    display: none;
+}
+
+img {
+    max-width: 50px;
+    margin-right: 20px;
+}
